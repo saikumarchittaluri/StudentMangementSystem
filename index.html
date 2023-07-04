@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Student Management System</h1>
+
+    <div class="form-container">
+      <h2>Student Management CRUD</h2>
+      <form id="student-form">
+        <!-- <label for="name">Name:</label> -->
+        <input class="formm" type="text" id="name" required placeholder="Name">
+         <!-- <label for="email">Email:</label> -->
+         <input type="email" class="formm" id="email" required placeholder="Email">
+         <!-- <label for="grade">Grade:</label> -->
+        <input type="text" class="formm" id="grade" required placeholder="GPA">
+        <!-- <label for="age">Age:</label> -->
+        <input type="number" class="formm" id="age" required placeholder="Age">
+        <!-- <label for="degree">Degree:</label> -->
+        <input type="text" class="formm" id="degree" required placeholder="Degree">
+       
+      </form>
+      <button type="submit" id="add-btn" class="Addbtn">Add Student</button>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search by name, email, or degree">
+    </div>
+
+    <div id="student-list"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
